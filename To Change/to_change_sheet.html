@@ -8,7 +8,7 @@
 
 <p style="font-size:8px; float: right"><em>To Change</em> by Ulysses Duckler & Ewen Albright (https://usducktape.itch.io/to-change)</p>
 <br>
-<p style="font-size:8px; float: right">R20 Character Sheet V2.2</p>
+<p style="font-size:8px; float: right">R20 Character Sheet V2.3</p>
 </div>
 </div>
 <br>
@@ -238,6 +238,8 @@ When you reveal your Falling card, you move closer to the source of your fears a
 <div class="row"><!-- CHANGE ROW APTITUDE 1 -->
 
   <div class="enclosure">
+<input type="checkbox" name="attr_pa1changed" class="changecheck" style="display:none">    
+<input type="checkbox" name="attr_pa1damaged" class="damagecheck" style="display:none">
     <div class="box phys apt">
       <span name="attr_pacross1" class="changetext">
       </span>
@@ -258,7 +260,8 @@ When you reveal your Falling card, you move closer to the source of your fears a
       <div class="inner"><h3>Changed</h3><input type="checkbox"  style= "margin-left:4px" name="attr_ma1changed"></div>
       <div class="inner"><h3>Damaged</h3><input type="checkbox"  style= "margin-left:4px"  name="attr_ma1damaged"></div>
     </div>
-  
+<input type="checkbox" name="attr_ma1changed" class="changecheck" style="display:none">    	
+<input type="checkbox" name="attr_ma1damaged" class="damagecheck" style="display:none">  
     <div class="box ment apt">
       <span name="attr_macross1" class="changetext">
       </span>
@@ -272,6 +275,8 @@ When you reveal your Falling card, you move closer to the source of your fears a
 <div class="row second space-between"><!-- CHANGE ROW APTITUDE 2 -->
  
   <div class="enclosure">
+<input type="checkbox" name="attr_pa2changed" class="changecheck" style="display:none">      
+<input type="checkbox" name="attr_pa2damaged" class="damagecheck" style="display:none">
     <div class="box phys apt">
       <span name="attr_pacross2" class="changetext">
       </span>
@@ -292,7 +297,8 @@ When you reveal your Falling card, you move closer to the source of your fears a
       <div class="inner"><h3>Changed</h3><input type="checkbox"  style= "margin-left:4px" name="attr_ma2changed"></div>
       <div class="inner"><h3>Damaged</h3><input type="checkbox"  style= "margin-left:4px" name="attr_ma2damaged"></div>
     </div>
-  
+<input type="checkbox" name="attr_ma2changed" class="changecheck" style="display:none">    	
+<input type="checkbox" name="attr_ma2damaged" class="damagecheck" style="display:none">
     <div class="box ment apt">
       <span name="attr_macross2" class="changetext">
       </span>
@@ -306,6 +312,8 @@ When you reveal your Falling card, you move closer to the source of your fears a
 <div class="row third space-between"><!-- CHANGE ROW APTITUDE 3 -->
  
   <div class="enclosure">
+<input type="checkbox" name="attr_pa3changed" class="changecheck" style="display:none">    
+<input type="checkbox" name="attr_pa3damaged" class="damagecheck" style="display:none">
     <div class="box phys apt">
       <span name="attr_pacross3" class="changetext">
       </span>
@@ -325,7 +333,8 @@ When you reveal your Falling card, you move closer to the source of your fears a
       <div class="inner"><h3>Changed</h3><input type="checkbox"  style= "margin-left:4px" name="attr_ma3changed"></div>
       <div class="inner"><h3>Damaged</h3><input type="checkbox"  style= "margin-left:4px" name="attr_ma3damaged"></div>
     </div>
-  
+<input type="checkbox" name="attr_ma3changed" class="changecheck" style="display:none">    	
+<input type="checkbox" name="attr_ma3damaged" class="damagecheck" style="display:none">  
     <div class="box ment apt">
       <span name="attr_macross3" class="changetext">
       </span>
@@ -334,7 +343,7 @@ When you reveal your Falling card, you move closer to the source of your fears a
 </div>
   
 
-<div class="row" style="font-family: contrail one"> <h2>Permanence</h2></div>
+<div class="row" style="align-items: flex-end; font-family: contrail one; max-height:10px"> <h2>Permanence</h2></div>
 
 
 <div class="row space-between"><!-- CHANGE ROW PERMANENCE -->
@@ -342,6 +351,8 @@ When you reveal your Falling card, you move closer to the source of your fears a
   <div class="empty" style="width: 10%"></div>
   
   <div class="center">
+<input type="checkbox" name="attr_permchanged" class="changecheck" style="display:none">      
+<input type="checkbox" name="attr_permdamaged" class="damagecheck" style="display:none">
   <div class="box perm">
   <span name="attr_permcross" class="changetext">
   </span></div>
@@ -355,11 +366,20 @@ When you reveal your Falling card, you move closer to the source of your fears a
   
   </div></div>
 </div>
-<br>
+
+
+<div class="row perm" style="align-items: flex-end; font-family: contrail one; max-height:10px"> 
+	<input type="checkbox" name="attr_permchanged" class="changecheck" style="display:none">  
+	<span style="font-size: 30px" class="perm"><em>no going back</em></span>
+</div>
+
+
 <div class="row third space-between"><!--CHANGE ROW FORTITUDE 3 -->
 
  
   <div class="enclosure">
+<input type="checkbox" name="attr_mf3changed" class="changecheck" style="display:none">      
+<input type="checkbox" name="attr_mf3damaged" class="damagecheck" style="display:none">
     <div class="box ment fort">
       <span name="attr_mfcross3" class="changetext">
       </span>
@@ -379,7 +399,8 @@ When you reveal your Falling card, you move closer to the source of your fears a
       <div class="inner"><h3>Changed</h3><input type="checkbox"  style= "margin-left:4px" name="attr_pf3changed"></div>
       <div class="inner"><h3>Damaged</h3><input type="checkbox"  style= "margin-left:4px" name="attr_pf3damaged"></div>
     </div>
-  
+<input type="checkbox" name="attr_pf3changed" class="changecheck" style="display:none">    	
+<input type="checkbox" name="attr_pf3damaged" class="damagecheck" style="display:none">
     <div class="box phys fort">
       <span name="attr_pfcross3" class="changetext">
       </span>
@@ -393,6 +414,8 @@ When you reveal your Falling card, you move closer to the source of your fears a
 <div class="row second space-between"><!-- CHANGE ROW FORTITUDE 2 -->
   
   <div class="enclosure">
+<input type="checkbox" name="attr_mf2changed" class="changecheck" style="display:none">      
+<input type="checkbox" name="attr_mf2damaged" class="damagecheck" style="display:none">
     <div class="box ment fort">
       <span name="attr_mfcross2" class="changetext">
       </span>
@@ -413,7 +436,8 @@ When you reveal your Falling card, you move closer to the source of your fears a
       <div class="inner"><h3>Changed</h3><input type="checkbox"  style= "margin-left:4px" name="attr_pf2changed"></div>
       <div class="inner"><h3>Damaged</h3><input type="checkbox"  style= "margin-left:4px" name="attr_pf2damaged"></div>
     </div>
-  
+<input type="checkbox" name="attr_pf2changed" class="changecheck" style="display:none">    	
+<input type="checkbox" name="attr_pf2damaged" class="damagecheck" style="display:none">   
     <div class="box phys fort">
       <span name="attr_pfcross2" class="changetext">
       </span>
@@ -427,6 +451,8 @@ When you reveal your Falling card, you move closer to the source of your fears a
 <div class="row"><!-- CHANGE ROW FORTITUDE 1 -->
   
   <div class="enclosure">
+<input type="checkbox" name="attr_mf1changed" class="changecheck" style="display:none">    
+<input type="checkbox" name="attr_mf1damaged" class="damagecheck" style="display:none">  
     <div class="box ment fort">
       <span name="attr_mfcross1" class="changetext">
       </span>
@@ -447,7 +473,8 @@ When you reveal your Falling card, you move closer to the source of your fears a
       <div class="inner"><h3>Changed</h3><input type="checkbox"  style= "margin-left:4px" name="attr_pf1changed"></div>
       <div class="inner"><h3>Damaged</h3><input type="checkbox"  style= "margin-left:4px" name="attr_pf1damaged"></div>
     </div>
-  
+<input type="checkbox" name="attr_pf1changed" class="changecheck" style="display:none">  
+<input type="checkbox" name="attr_pf1damaged" class="damagecheck" style="display:none">  
     <div class="box phys fort">
       <span name="attr_pfcross1" class="changetext">
       </span>

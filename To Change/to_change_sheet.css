@@ -32,8 +32,9 @@ h4{
 /*CONTAINMENT*/
 .row{
 	display: flex;
-	height: 180 px;
-	margin: auto;
+/*	height: 180 px;*/
+	margin-right: auto;
+	margin-left: auto;
 	color: indigo;
 	justify-content: space-between;
 	background-color: transparent;
@@ -86,13 +87,27 @@ h4{
   max-height: 150px;
   min-height: 150px;
   padding: 5px;
-  border: 5px solid rebeccapurple;
+  /*border: 5px solid rebeccapurple;*/
   border-radius: 12px;
   font-size: 100%;
   line-height: 115%;
   color: black;
   font-family: candal;
+
 }
+
+input.damagecheck:not(:checked) ~ div.box {
+	border: 5px solid rebeccapurple;
+	  transition-duration: 2s;
+      transition-property: background, border;
+}
+input.damagecheck:checked ~ div.box{
+	border: 5px solid red;
+      transition-duration: 2s;
+      transition-property: background, border;
+}
+
+
 
 /*CONTAINER FORMATTING*/
 
@@ -163,35 +178,81 @@ h4{
 	text-align: center;
 }
 
-.phys.apt{
-    background: rgb(255,182,193);
+input.changecheck:not(:checked) ~ div.box.phys.apt{
     background: linear-gradient(310deg, rgba(230,230,250,.6) 10%, rgba(255,182,193,.6) 40%, rgba(153,102,204,.6) 100%);
-    }
-
-.phys.fort{
-    background: rgb(176,196,222);
-    background: linear-gradient(130deg, rgba(255,228,225,.6) 10%, rgba(176,196,222,.6) 40%, rgba(153,102,204,.6) 100%);
-}
-
-
-.ment.apt{
-	background: rgb(176,196,222);
-background: linear-gradient(40deg, rgba(255,228,225,.6) 10%, rgba(176,196,222,.6) 40%, rgba(153,102,204,.6) 100%);
-}
-
-.ment.fort{
+	transition-duration: 2s;
+      transition-property: background, border;
+	}
+	
+input.changecheck:checked ~ div.box.phys.apt{
     background: rgb(255,182,193);
-    background: linear-gradient(220deg, rgba(230,230,250,.6) 10%, rgba(255,182,193,.6) 40%, rgba(153,102,204,.6) 100%);
+	transition-duration: 2s;
+      transition-property: background, border;
 }
 
 
+input.changecheck:not(:checked) ~ div.box.phys.fort{
+    background: linear-gradient(130deg, rgba(230,230,250,.6) 10%, rgba(255,182,193,.6) 40%, rgba(153,102,204,.6) 100%);
+	transition-duration: 2s;
+      transition-property: background, border;
+}
 
+input.changecheck:checked ~ div.box.phys.fort{
+	background: rgb(255,182,193);
+	transition-duration: 2s;
+      transition-property: background, border;
+}
 
-.perm{
-    background: rgb(216,191,216);
+input.changecheck:not(:checked) ~ div.box.ment.apt{
+	background: linear-gradient(40deg, rgba(255,228,225,.6) 10%, rgba(176,196,222,.6) 40%, rgba(153,102,204,.6) 100%);
+	transition-duration: 2s;
+      transition-property: background, border;
+}
+
+input.changecheck:checked ~ div.box.ment.apt{
+	background: rgb(176,196,222);
+	transition-duration: 2s;
+      transition-property: background, border;
+}
+
+input.changecheck:not(:checked) ~ div.box.ment.fort{
+    background: linear-gradient(220deg, rgba(255,228,225,.6) 10%, rgba(176,196,222,.6) 40%, rgba(153,102,204,.6) 100%);
+	transition-duration: 2s;
+      transition-property: background, border;
+}
+
+input.changecheck:checked ~ div.box.ment.fort{
+	background: rgb(176,196,222);
+	transition-duration: 2s;
+      transition-property: background, border;
+}
+
+input.changecheck:not(:checked) ~ div.box.perm{
     background: radial-gradient(circle, rgba(220,20,60,.6) 10%, rgba(221, 160, 221,.6) 50%, rgba(201,112,165,0) 90%)rgba(153,102,204,.6) 100%;
     background-position: center;
+	transition-duration: 2s;
+      transition-property: background, border;
 }
+
+
+input.changecheck:checked ~ div.box.perm{
+    background: fuchsia;
+	transition-duration: 2s;
+     transition-property: background, border;
+}
+
+input.changecheck:not(:checked) ~ span.perm{
+	opacity: 0;
+	transition-duration: 2s;
+     transition-property: opacity;
+}
+
+input.changecheck:checked ~ span.perm{
+	opacity: 0.7;
+	transition-duration: 2s;
+     transition-property: opacity;
+}
+
 
 /*FACE CARD TEXT CONTROL*/
 
@@ -289,9 +350,6 @@ background: linear-gradient(40deg, rgba(255,228,225,.6) 10%, rgba(176,196,222,.6
 	max-width: 200 px;
 	align-self: center;	
 }
-
-
-
 
 
 
